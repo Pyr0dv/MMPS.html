@@ -1,0 +1,219 @@
+body {
+  background-repeat: repeat;
+  background-color: #000000;
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+body{color: aliceblue;}
+
+
+
+body {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+a  {
+    color: rgb(11, 167, 245);
+}
+
+.embed{
+    background-color: #5865f2;
+    color: ivory;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+div  {
+    color: rgb rgb(255, 255, 255)255;
+    border-radius: 5px;
+}
+
+
+
+
+
+ul.dropdown-menu {
+    background-color: rgb(30,33,36);
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    border-radius: 3px;
+}
+
+
+.dembed {
+background-color: rgb(45, 48, 52);
+color: ivory;
+font-weight: bold;
+font-size: 39px;
+border-radius: 5px;
+}
+
+
+
+
+
+  li::marker {
+    font-size: 1.4em;
+    color: #3c8aff;
+
+}
+
+
+.pic {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.pic2 {
+  height: 290px;
+  border-radius: 20px;
+}
+
+.pic15 {
+    height: 250px;
+    border-radius: 0px;
+  }
+
+
+.head {
+    height: 160px;
+    border-radius: 20xp;
+}
+
+
+.vid {
+  height: 30rem;
+  border-radius: 5px;
+}
+
+.dan {
+  height: auto;
+  border-radius: 5px;
+}
+
+.vip{
+    background-color: rgba(236,200,112,255);
+    color: rgba(31,27,15,255);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.8) 30%, transparent 70%, transparent 100%);
+  opacity: 0;
+  animation: shineAnimation 2s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes shineAnimation {
+  0% {
+    opacity: 0;
+    left: -100%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+
+
+
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.new-badge {
+  animation: pulse 1s infinite; /* Adjust the animation duration as needed */
+}
+
+
+
+.label {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.text {
+  display: none;
+  color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for a shiny effect */
+  font-size: 4em; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+}
+
+.text.active {
+  display: inline-block;
+  animation: corporateText 3.3s ease-in-out forwards; /* Adjust the animation duration */
+}
+
+@keyframes corporateText {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(20px); }
+}
