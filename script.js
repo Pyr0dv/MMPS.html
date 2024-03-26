@@ -14,3 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
   setInterval(changeText, 3500); // Adjust the interval to 3.5 seconds
 });
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const animatedCursor = document.getElementById('animated-cursor');
+  const joinNow = document.querySelector('.colorful-link');
+
+  joinNow.addEventListener('mouseover', () => {
+      animatedCursor.style.display = 'block';
+      animatedCursor.style.left = (event.clientX - 25) + 'px'; // Adjust position based on cursor size
+      animatedCursor.style.top = (event.clientY - 25) + 'px'; // Adjust position based on cursor size
+      setTimeout(() => {
+          animatedCursor.style.display = 'none';
+      }, 1000);
+  });
+});
+

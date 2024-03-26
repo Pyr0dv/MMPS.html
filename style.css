@@ -217,3 +217,27 @@ border-radius: 5px;
   90% { opacity: 1; transform: translateY(0); }
   100% { opacity: 0; transform: translateY(20px); }
 }
+
+/* CSS styles for the colorful link */
+.colorful-link {
+  padding: 5px 10px;
+  color: white; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition */
+  position: relative; /* Set position to relative */
+  z-index: 1; /* Ensure link appears above other elements */
+}
+
+.colorful-link:hover {
+  color: white; /* White text color on hover */
+}
+
+.blue-text {
+  color: #0072ff; /* Blue color for the text "Jo" and " N" */
+}
+
+.white-text {
+  color: white; /* White color for the text "in" and "ow" */
+}
+
